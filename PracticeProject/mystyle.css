@@ -1,0 +1,137 @@
+body{
+background-color: Ghostwhite;
+margin: 0;
+padding: 0;
+}
+.header{
+  background-color: #ef5350;
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+  box-shadow: 0px 1px 3px grey;
+
+}
+.footer{
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+
+}
+.row{
+  display: inline;
+}
+
+.left-menu{
+  background-color: #f1f1f1;
+  margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 3px 3px 3px grey;
+
+}
+
+.left-menu ul{
+  list-style-type: none;
+  margin: 0;
+    padding: 0;
+}
+.left-menu ul li{
+}
+.left-menu ul li a{
+  text-decoration: none;
+  display: block;
+  color: black;
+    font-size: 25px;
+    padding: 8px 16px;
+
+}
+.left-menu ul li a.active{
+  background-color: #ef5350;
+  color: white;
+    font-size: 27px;
+}
+.left-menu ul li a:hover:not(.active){
+  background-color: #555;
+  color: white;
+    font-size: 27px;
+}
+h1:hover{
+  color: #ef5350;
+}
+
+.practiceList{
+  margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: #f1f1f1;
+box-shadow: 3px 3px 3px grey;
+}
+.practiceList ul{
+  list-style-type: none;
+}
+.practiceList ul li{
+  padding: 5px;
+}
+.practiceList ul li a{
+  text-decoration: none;
+  color:navy;
+    font-size: 15px;
+}
+
+.practiceList ul li a:hover{
+  color: #ef5350;
+    font-size: 17px;
+}
+
+/* Left and right column */
+.column-left{ float: left; width: 20%;}
+.column-right{ float: right; width: 20%;}
+/* Middle column */
+.column-center{ display: inline-block; width: 60%;}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-left::after{
+  clear: left;
+}
+
+.contents{
+  padding: 10px;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column-left, .column-right, .column-center {
+        width: 100%;
+    }
+    .left-menu ul li a{
+        font-size: 16px;
+    }
+
+    .left-menu ul li a.active{
+        font-size: 18px;
+    }
+
+    .left-menu ul li a:hover:not(.active){
+        font-size: 18px;
+    }
+}
+
+.mainContainer{
+  padding:10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
