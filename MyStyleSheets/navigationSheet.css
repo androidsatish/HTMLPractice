@@ -1,0 +1,155 @@
+body{
+  background-color: Ghostwhite;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: Tomato;
+}
+li{
+  float: left;
+}
+li a, .dropbtn{
+  display: inline-block;
+  font-size: 22px;
+  color: white;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn{
+  background-color: Ghostwhite;
+  color: Tomato;
+}
+li.dropdown{
+  display: inline-block;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.dropdown-content a{
+  color: Tomato;
+  font-size: 18px;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background-color: Ghostwhite;
+}
+.dropdown-content a:hover{
+  background-color: Tomato;
+  color: white;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+.center{
+background-color: Ghostwhite;
+padding: 20px 30px 20px 30px;
+width: 80%;
+margin: auto;
+min-height: 300px;
+display: flex;
+align-items: center;
+}
+.fragment{
+border: 1px solid Tomato;
+border-radius: 4px;
+min-height: inherit;
+background-color: #f2f2f2;
+padding: 20px;
+margin: 10px;
+flex: 1;
+box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+/* input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: serif;
+    font-size: 15px;
+}
+
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: serif;
+    font-size: 15px;
+} */
+
+/* input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: serif;
+    color: white;
+    margin-top: 20px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: none;
+    transition: background-color .3s;
+}
+*/
+
+/* input[type=text]:focus{
+  border-color: Tomato;
+}
+*/
+
+/* input[type=submit]:hover {
+    background-color: #45a049;
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.3);
+}
+*/
+/* label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-family: serif;
+    font-size: 15px;
+} */
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.btnContainer{
+  width: 75%;
+  margin-left: 25%;
+
+}
